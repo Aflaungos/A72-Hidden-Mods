@@ -1,4 +1,4 @@
-![m23banner](https://user-images.githubusercontent.com/35925402/131203435-a38477ea-4984-4994-be2b-3b317735251a.png)
+![m23banner](https://github.com/Aflaungos/A72-Hidden-Mods/blob/main/131203435-a38477ea-4984-4994-be2b-3b317735251a.png)
 # M23-Hidden-Mods
 A magisk module adding the mods from ShaDisNX255's [XDA-Thread](https://forum.xda-developers.com/t/samsung-galaxy-a71-working-mods.4173295/) plus many extra mods systemlessly!<br/>
 Thanks ShaDisNX255 for allowing me to use your features! Without you, this project would've never started.
