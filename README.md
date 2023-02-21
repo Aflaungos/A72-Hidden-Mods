@@ -1,11 +1,9 @@
-![a72banner](https://user-images.githubusercontent.com/35925402/131203435-a38477ea-4984-4994-be2b-3b317735251a.png)
-# A72-Hidden-Mods
+![m23banner](https://user-images.githubusercontent.com/35925402/131203435-a38477ea-4984-4994-be2b-3b317735251a.png)
+# M23-Hidden-Mods
 A magisk module adding the mods from ShaDisNX255's [XDA-Thread](https://forum.xda-developers.com/t/samsung-galaxy-a71-working-mods.4173295/) plus many extra mods systemlessly!<br/>
 Thanks ShaDisNX255 for allowing me to use your features! Without you, this project would've never started.
 
-# ⚠️EOL - No support given anymore. I've switched to AOSP and have no interest in Samsung anymore. Feel free to fork, if you want to keep this project alive.
-
-[XDA Thread of A72 Hidden Mods](https://forum.xda-developers.com/t/magisk-module-a72-hidden-mods.4258825/)
+[XDA Thread of M23 Hidden Mods](Coming soon)
 
 #### For more mods on CSC-Level also get: [A72-CSC-Mods](https://github.com/UltraHQ/A72-CSC-Mods)
 
@@ -14,7 +12,7 @@ Thanks ShaDisNX255 for allowing me to use your features! Without you, this proje
 2. Open the magisk app and go to modules
 3. Click the "Install from storage" button and select the .zip you just downloaded 
 
-> Note: It should only be used on the Galaxy A72 (SM-A725F) running the corresponding android security patch version as written in the releases. Trying on other devices is at your own risk.<br/>The changes are always reversable, by simply removing the module in magisk.
+> Note: It should only be used on the Galaxy M23 (SM-M236B) running the corresponding android security patch version as written in the releases. Trying on other devices is at your own risk.<br/>The changes are always reversable, by simply removing the module in magisk.
 
 ### Troubleshooting:
 - If camera app crashes (or other issues like error on 64MP mode) please clear camera app data.
