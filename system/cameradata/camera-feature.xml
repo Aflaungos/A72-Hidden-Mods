@@ -1,7 +1,7 @@
 <?xml version= "1.0" encoding= "UTF-8"?>
 <resources>
     <!-- Shootingmode -->
-    <local name="SHOOTING_MODE_FUN" back="FUN" front="FUN" enable="false" more="false" order="1" />
+    <local name="SHOOTING_MODE_FUN" back="FUN" front="FUN" enable="true" more="false" order="1" />
     <local name="SHOOTING_MODE_LIVE_FOCUS" back="LIVE_FOCUS" front="LIVE_FOCUS_LITE" enable="true" more="false" order="2" info="2"/>
     <local name="SHOOTING_MODE_PHOTO" back="PHOTO" front="PHOTO" enable="true" more="false" order="3" />
     <local name="SHOOTING_MODE_VIDEO" back="VIDEO" front="VIDEO" enable="true" more="false" order="4" />
@@ -191,7 +191,7 @@
     <local name="SUPPORT_HEIF_FORMAT" value="true"/>
 
     <!-- Camera Preview FPS Variations -->
-    <local name="SINGLE_LIVE_FOCUS_PREVIEW_FPS_MAX" value="24" />
+    <local name="SINGLE_LIVE_FOCUS_PREVIEW_FPS_MAX" value="60" />
     <local name="FRONT_CAMERA_PREVIEW_FPS_MIN" value="8" />
     <local name="CAMERA_PREVIEW_FPS_MIN" value="15" />
     <local name="BACK_WIDE_CAMERA_PREVIEW_FPS_MIN" value="10" />
@@ -238,8 +238,8 @@
     <local name="SINGLE_TAKE_USING_SCENE_OPTIMIZER" value="true"/>
     <local name="FRONT_SINGLE_TAKE_PHOTO_PREVIEW_FPS_MIN" value="8" />
     <local name="REAR_SINGLE_TAKE_PHOTO_PREVIEW_FPS_MIN" value="15" />
-    <local name="FRONT_SINGLE_TAKE_PHOTO_PREVIEW_FPS_MAX" value="24" />
-    <local name="REAR_SINGLE_TAKE_PHOTO_PREVIEW_FPS_MAX" value="24" />
+    <local name="FRONT_SINGLE_TAKE_PHOTO_PREVIEW_FPS_MAX" value="60" />
+    <local name="REAR_SINGLE_TAKE_PHOTO_PREVIEW_FPS_MAX" value="60" />
     <local name="SINGLE_TAKE_USING_BEAUTY" value="true" />
     <local name="SUPPORT_PALM_DETECTION_LITE" value="true" />
     <local name="SINGLE_TAKE_FRONT_CAMERA_DYNAMIC_FOV" value="false" />
@@ -280,7 +280,7 @@
     <local name="SUPPORT_MY_FILTER" value="true" />
     <local name="SUPPORT_QUICK_TAKE" value="true" />
     <local name="DISPLAY_CUTOUT_POSITION" value="1" />
-    <local name="DISPLAY_CUTOUT_ANIMATION_INFO" num-of-display-cutout="1" display-cutout-0-type="0" display-cutout-0-left="159" display-cutout-0-top="0" display-cutout-0-right="201" display-cutout-0-bottom="42"/>
+    <local name="DISPLAY_CUTOUT_ANIMATION_INFO" num-of-display-cutout="1" display-cutout-0-type="3" display-cutout-0-left="100" display-cutout-0-top="0" display-cutout-0-right="260" display-cutout-0-bottom="26"/>
     <local name="USING_MAX_RESOLUTION_STAMP_IN_WATERMARK" value="true"/>
     <local name="SUPPORT_ZOOM_MAP_VIEW" value="true"/>
     <local name="SUPPORT_NIGHT_MODE_ZOOM" value="true"/>
@@ -300,10 +300,10 @@
     <local name="SUPPORT_CAMERA_DEBUG_INFO" value="true"/>
 
     <!-- Advance option HDR10+ Video Recording -->
-    <local name="SUPPORT_HDR10_PLUS_RECORDING" value="false"/>
+    <local name="SUPPORT_HDR10_PLUS_RECORDING" value="true"/>
 
     <!-- HDR Video Recording -->
-    <local name="SUPPORT_VIDEO_HDR" value="false"/>
+    <local name="SUPPORT_VIDEO_HDR" value="true"/>
     <local name="SUPPORT_3HDR_RECORDING" value="true"/>
 
     <!-- temporary enable for QC -->
