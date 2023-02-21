@@ -5,8 +5,6 @@ Thanks ShaDisNX255 for allowing me to use your features! Without you, this proje
 
 [XDA Thread of M23 Hidden Mods](Coming soon)
 
-#### For more mods on CSC-Level also get: [A72-CSC-Mods](https://github.com/UltraHQ/A72-CSC-Mods)
-
 ### Installation:
 1. Download the module from the releases
 2. Open the magisk app and go to modules
