@@ -1,4 +1,4 @@
-### Only for the Android 12 May and June security patch (A725FXXS4BVE2 & A725FXXU4BVE3)
+### Only for the Android 13 December security patch (M236BXXU1BWA5 & E236BXXU1BWA5)
 Running on devices with another patch can cause issues!
 
 ---
