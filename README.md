@@ -1,6 +1,6 @@
 ![m23banner](https://github.com/Aflaungos/A72-Hidden-Mods/blob/main/131203435-a38477ea-4984-4994-be2b-3b317735251a.png)
 # M23-Hidden-Mods
-A magisk module adding the mods from ShaDisNX255's [XDA-Thread](https://forum.xda-developers.com/t/samsung-galaxy-a71-working-mods.4173295/) plus many extra mods systemlessly!<br/>
+A magisk module adding the mods from ShaDisNX255's NcX ROM [XDA-Thread](https://forum.xda-developers.com/t/samsung-galaxy-a71-working-mods.4173295/)  and based on ULTRAHQ's repo, plus many extra mods systemlessly!<br/>
 Thanks ShaDisNX255 for allowing me to use your features! Without you, this project would've never started.
 
 [XDA Thread of M23 Hidden Mods](Coming soon)
@@ -10,10 +10,10 @@ Thanks ShaDisNX255 for allowing me to use your features! Without you, this proje
 2. Open the magisk app and go to modules
 3. Click the "Install from storage" button and select the .zip you just downloaded 
 
-> Note: It should only be used on the Galaxy M23 (SM-M236B) running the corresponding android security patch version as written in the releases. Trying on other devices is at your own risk.<br/>The changes are always reversable, by simply removing the module in magisk.
+> Note: It should only be used on the Galaxy M23/F23 (SM-M236B/SM-E236B) running the corresponding android security patch version as written in the releases. <br/>The changes are always reversile, by simply removing the module in magisk.
 
 ### Troubleshooting:
-- If camera app crashes (or other issues like error on 64MP mode) please clear camera app data.
+- If camera app crashes (or other issues like error on 50MP mode) please clear camera app data.
 - If system apps start crashing, boot into your Recovery and on
   <details open>
   <summary>Stock recovery</summary>
@@ -24,7 +24,7 @@ Thanks ShaDisNX255 for allowing me to use your features! Without you, this proje
   1. Wipe cache partition</br>2. Wipe dalvik cache
   </details>
 - To make Object / Shadow / Reflection Eraser show, update [Samsung Photo Editor](https://www.apkmirror.com/apk/samsung-electronics-co-ltd/samsung-photo-editor/) by installing the latest APK.
-- To fix Samsung Health root detection, I recommend using [SamsungAppsPatcher](https://adil.hanney.org/SamsungAppsPatcher/)
+- To fix Samsung Health root detection, I recommend using [KnoxPatch](https://github.com/BlackMesa123/KnoxPatch/releases)
 
 ### Known bugs:
 - Night Mode in camera: Taking a photo with the ultra wide cam will give you an error, but the photo will still save. The main cam does not have this problem. This issue is only present in night mode and nowhere else.
