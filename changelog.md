@@ -2,5 +2,6 @@
 Running on devices with another patch can cause issues!
 
 ---
-<b>v1.0 | Changelog:</b>
-<br/>• First Release
+<b>v1.1 | Changelog:</b>
+<br/>• Updated README
+<br/>• Updated Picture
