@@ -3,7 +3,7 @@
 A magisk module adding the mods from ShaDisNX255's NcX ROM [XDA-Thread](https://forum.xda-developers.com/t/samsung-galaxy-a71-working-mods.4173295/)  and based on ULTRAHQ's repo, plus many extra mods systemlessly!<br/>
 Thanks ShaDisNX255 for allowing me to use your features! Without you, this project would've never started.
 
-[XDA Thread of M23 Hidden Mods](Coming soon)
+[XDA Thread of M23 Hidden Mods] https://forum.xda-developers.com/t/mod-oneui-m23-hidden-mods.4626443/
 
 ### Installation:
 1. Download the module from the releases
