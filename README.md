@@ -27,7 +27,9 @@ Thanks ShaDisNX255 for allowing me to use your features! Without you, this proje
 - To fix Samsung Health root detection, I recommend using [KnoxPatch](https://github.com/BlackMesa123/KnoxPatch/releases)
 
 ### Known bugs:
-- Night Mode in camera: Taking a photo with the ultra wide cam will give you an error, but the photo will still save. The main cam does not have this problem. This issue is only present in night mode and nowhere else.
+- Back Camera 1080p 60FPS: Video stutters
+- Detail Enhancer doesn't work
+  
 - Please report, if you find any
 
 #### Added OS Features:
@@ -36,27 +38,17 @@ Thanks ShaDisNX255 for allowing me to use your features! Without you, this proje
 - High-End Animations
 - Enhanced CPU Responsiveness
 - Added High Performance mode (also known as Enhanced Processing mode)
-- Voice Recorder Interview mode
-- AOD to Lockscreen Transition
-- Full Edge Lighting
-- Fixed Smart View (Normally broken on rooted devices)
 - Enhance Photo Feature in Gallery
 - Codec support for APE, DSD and HDR10+ content
-- Camera Privacy Toggle
 - ADPS (Wi-Fi Power Saving)
-- Enabled [mDNIe](https://www.samsung.com/global/galaxy/what-is/mdnie/)
 - Enabled Resolution changing (FHD, HD - only visible in Bixby Routines)
-- Setting to limit battery charge to 85%
-- Smart Widgets
 - Samsung Smart Suggestions (Smart Calendar, Smart Widgets Auto Rotation, ..)
 
 
 #### Added Camera Features:
 - Extended pro (video) mode features: Histogram, Focus peaking, Zoom, Reset button, Expanded shutter speed
-- Tele cam in pro video mode (Can take videos with 30x zoom)
 - Unlimited Video File Size
 - EIS Support / Video stabilization @ 4K (Disable energy saving mode to avoid lag)
-- AI Detail Enhancer feature (64MP mode)
 - Object/Shadow/Reflection Eraser (Update [Samsung Photo Editor](https://www.apkmirror.com/apk/samsung-electronics-co-ltd/samsung-photo-editor/) to make it work, by installing the latest APK)
 - Full single take (Full AI, Second Editing, ..)
 - Full Beauty features (Beauty in Live Focus, Beauty Brighten, Body Beauty, change skin tone)
