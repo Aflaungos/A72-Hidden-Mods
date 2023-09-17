@@ -59,7 +59,6 @@ jobs:
     - name: Delete older releases
       uses: dev-drprasad/delete-older-releases@v0.2.1
       with:
-        repo: <owner>/<repoName> # defaults to current repo
         keep_latest: 3
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
