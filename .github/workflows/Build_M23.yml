@@ -44,3 +44,49 @@ jobs:
           Target: ${{ github.event.inputs.BUILD_TARGET }}.img
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Delete All Other Releases
+      run: |
+        # Get the list of all releases
+        RELEASES=$(curl -s -X GET \
+          -H "Authorization: Bearer ${{ secrets.GH_TOKEN }}" \
+          "https://api.github.com/repos/${{ github.repository }}/releases")
+
+        # Extract the release IDs and names
+        RELEASE_IDS=($(echo $RELEASES | jq -r '.[].id'))
+        RELEASE_NAMES=($(echo $RELEASES | jq -r '.[].name'))
+
+        # Get the tag name of the current release
+        CURRENT_TAG_NAME="${{ github.run_id }}"
+
+        # Loop through all releases
+        for i in "${!RELEASE_IDS[@]}"; do
+          # Check if the release is not the current one
+          if [ "${RELEASE_NAMES[$i]}" != "$CURRENT_TAG_NAME" ]; then
+            # Delete the release
+            curl -s -X DELETE \
+              -H "Authorization: Bearer ${{ secrets.GH_TOKEN }}" \
+              "https://api.github.com/repos/${{ github.repository }}/releases/${RELEASE_IDS[$i]}"
+          fi
+        done
+
+        # Get the list of all workflow runs
+        RUNS=$(curl -s -X GET \
+          -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+          "https://api.github.com/repos/${{ github.repository }}/actions/runs")
+
+        # Extract the run IDs
+        RUN_IDS=($(echo $RUNS | jq -r '.workflow_runs[].id'))
+
+        # Loop through all runs
+        for run_id in "${RUN_IDS[@]}"; do
+          # Check if the run is not the current one
+          if [ "$run_id" != "${{ github.run_id }}" ]; then
+            # Cancel (delete) the run
+            curl -s -X POST \
+              -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+              "https://api.github.com/repos/${{ github.repository }}/actions/runs/$run_id/cancel"
+          fi
+        done
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
