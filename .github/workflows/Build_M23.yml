@@ -64,7 +64,7 @@ jobs:
         token: ${{ github.token }}
         repository: ${{ github.repository }}
         delete_run_by_conclusion_pattern: ${{ github.event.inputs.delete_run_by_conclusion_pattern }}
-        retain_days: 30
-        keep_minimum_runs: 6
+        retain_days: 0
+        keep_minimum_runs: 1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
