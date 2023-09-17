@@ -17,13 +17,6 @@ jobs:
     # You might want to Checkout your repo first, but not mandatory
     - name: Check Out
       uses: actions/checkout@v3
-
-    - name: Setup SSH Keys
-      if: ${{ startsWith(github.event.inputs.MANIFEST_URL, 'git@github.com') }}
-      uses: webfactory/ssh-agent@v0.5.4
-      with:
-          ssh-private-key: |
-              ${{ secrets.SSH_PRIVATE_KEY }}
               
     - name: Create Zip Archive
       run: |
