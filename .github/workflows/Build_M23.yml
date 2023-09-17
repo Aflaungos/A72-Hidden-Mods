@@ -58,7 +58,6 @@ jobs:
 
     - uses: dev-drprasad/delete-older-releases@v0.2
       with:
-      repository: ${{ github.repository }}
       keep_latest: 1
       delete_tag_pattern: beta # defaults to ""
       env:
