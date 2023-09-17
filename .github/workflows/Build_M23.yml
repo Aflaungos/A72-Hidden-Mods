@@ -38,7 +38,7 @@ jobs:
       with:
         files: M23-Hidden_Mods.zip
         name: ${{ github.event.inputs.DEVICE_NAME }}-${{ github.run_id }}
-        tag_name: ${{ github.run_id }}
+        tag_name: M23 Hidden Mods
         body: |
           Device: M23
           Device: ${{ github.event.inputs.DEVICE_NAME }}
@@ -61,6 +61,6 @@ jobs:
       with:
         repo: <owner>/<repoName> # defaults to current repo
         keep_latest: 3
-        delete_tag_pattern: 
+        delete_tag_pattern: M23 Hidden Mods
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
