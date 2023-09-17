@@ -8,10 +8,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
- 
+
+    steps:
     # You might want to Checkout your repo first, but not mandatory
     - name: Check Out
-      uses: actions/checkout@v3
+      uses: actions/checkout@v2
+      
     # Cleanup The Actions Workspace Using Custom Composite Run Actions
     - name: Cleanup
       uses: rokibhasansagar/slimhub_actions@main
@@ -26,6 +28,7 @@ jobs:
         zip -r $ZIP_FILE .
 
     - name: Upload to Release
+      id: upload-release
       uses: softprops/action-gh-release@v1
       with:
         files: ${{ runner.workspace }}/${{ env.ZIP_FILE }}
