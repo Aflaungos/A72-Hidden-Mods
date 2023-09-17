@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-20.04
     permissions:
       contents: write
+      actions: write
     steps:
  
     # You might want to Checkout your repo first, but not mandatory
