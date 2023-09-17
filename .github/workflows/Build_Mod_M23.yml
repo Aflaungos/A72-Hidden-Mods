@@ -17,7 +17,7 @@ jobs:
     - name: Create Zip Archive
       run: |
         # Define the name of the zip file (you can change it if needed)
-        ZIP_FILE="M23-Hidden_Mods.zip"
+        import ZIP_FILE="M23-Hidden_Mods.zip"
         
         # Archive all files in the repository into a zip file
         zip -r $ZIP_FILE .
