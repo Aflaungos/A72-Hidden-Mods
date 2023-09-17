@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # You might want to Checkout your repo first, but not mandatory
     - name: Check Out
       uses: actions/checkout@v2
 
@@ -19,8 +18,11 @@ jobs:
         # Define the name of the zip file (you can change it if needed)
         ZIP_FILE="M23-Hidden_Mods.zip"
         
+        # Navigate to the repository root
+        cd $GITHUB_WORKSPACE
+        
         # Archive all files in the repository into a zip file
-        zip -r $ZIP_FILE *
+        zip -r $ZIP_FILE .
 
     - name: Upload to Release
       id: upload-release
