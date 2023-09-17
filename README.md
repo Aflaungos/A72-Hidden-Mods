@@ -13,17 +13,17 @@ Thanks ShaDisNX255 for allowing me to use your features! Without you, this proje
 > Note: It should only be used on the Galaxy M23/F23 (SM-M236B/SM-E236B) running the corresponding android security patch version as written in the releases. <br/>The changes are always reversile, by simply removing the module in magisk.
 
 ### Troubleshooting:
+- Back Camera 1080p 60FPS: Video stutters, disable auto fps and stabilization
 - If camera app crashes (or other issues like error on 50MP mode) please clear camera app data.
 - If system apps start crashing, boot into your Recovery and on
   <details open>
   <summary>Stock recovery</summary>
-  1. Wipe cache partition</br>2. Repair apps
+  1. Wipe cache partition</br>
   </details>
   <details open>
   <summary>TWRP recovery</summary>
   1. Wipe cache partition</br>2. Wipe dalvik cache
   </details>
-- To make Object / Shadow / Reflection Eraser show, update [Samsung Photo Editor](https://www.apkmirror.com/apk/samsung-electronics-co-ltd/samsung-photo-editor/) by installing the latest APK.
 - To fix Samsung Health root detection, I recommend using [KnoxPatch](https://github.com/BlackMesa123/KnoxPatch/releases)
 
 ### Known bugs:
@@ -42,8 +42,6 @@ Thanks ShaDisNX255 for allowing me to use your features! Without you, this proje
 - Codec support for APE, DSD and HDR10+ content
 - ADPS (Wi-Fi Power Saving)
 - Enabled Resolution changing (FHD, HD - only visible in Bixby Routines)
-- Samsung Smart Suggestions (Smart Calendar, Smart Widgets Auto Rotation, ..)
-
 
 #### Added Camera Features:
 - Extended pro (video) mode features: Histogram, Focus peaking, Zoom, Reset button, Expanded shutter speed
