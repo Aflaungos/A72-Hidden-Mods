@@ -1,4 +1,4 @@
-name: Build M23
+name: Build Mod
 
 on:
   push:
