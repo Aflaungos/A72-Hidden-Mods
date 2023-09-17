@@ -1,4 +1,4 @@
-name: Recovery Build
+name: Build M23
 
 on:
   push:
@@ -30,7 +30,7 @@ jobs:
         
         cd $GITHUB_WORKSPACE
         
-        zip -r $ZIP_FILE .
+        zip -r $ZIP_FILE . -x ".git*" -x ".github*"
 
     - name: Upload to Release
       uses: softprops/action-gh-release@v1
