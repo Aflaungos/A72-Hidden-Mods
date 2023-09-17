@@ -37,8 +37,8 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         files: M23-Hidden_Mods.zip
-        name: ${{ github.event.inputs.DEVICE_NAME }}-${{ github.run_id }}
-        tag_name: M23 Hidden Mods
+        name: M23 Hidden Mods
+        tag_name: ${{ github.run_id }}
         body: |
           Device: M23
           Device: ${{ github.event.inputs.DEVICE_NAME }}
