@@ -61,6 +61,6 @@ jobs:
       with:
         repo: <owner>/<repoName> # defaults to current repo
         keep_latest: 3
-        delete_tag_pattern: ${{ github.run_id }}
+        delete_tag_pattern: 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
