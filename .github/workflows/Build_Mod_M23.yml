@@ -13,11 +13,6 @@ jobs:
     # You might want to Checkout your repo first, but not mandatory
     - name: Check Out
       uses: actions/checkout@v2
-      
-    # Cleanup The Actions Workspace Using Custom Composite Run Actions
-    - name: Cleanup
-      uses: rokibhasansagar/slimhub_actions@main
-      # That's it! Now use your normal steps
 
     - name: Create Zip Archive
       run: |
