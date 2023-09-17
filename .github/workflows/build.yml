@@ -1,4 +1,4 @@
-name: Build Mod M23
+name: Recovery Build
 
 on:
   push:
@@ -7,11 +7,15 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-
+    if: github.event.repository.owner.id == github.event.sender.id
+    runs-on: ubuntu-20.04
+    permissions:
+      contents: write
     steps:
+ 
+    # You might want to Checkout your repo first, but not mandatory
     - name: Check Out
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Setup SSH Keys
       if: ${{ startsWith(github.event.inputs.MANIFEST_URL, 'git@github.com') }}
@@ -19,12 +23,7 @@ jobs:
       with:
           ssh-private-key: |
               ${{ secrets.SSH_PRIVATE_KEY }}
-
-    - name: Initialize repo
-      run: |
-        git config --global user.name "Nico170420"
-        git config --global user.email "b170420nc@gmail.com"
-
+              
     - name: Create Zip Archive
       run: |
         ZIP_FILE="M23-Hidden_Mods.zip"
@@ -34,14 +33,14 @@ jobs:
         zip -r $ZIP_FILE .
 
     - name: Upload to Release
-      id: upload-release
       uses: softprops/action-gh-release@v1
       with:
         files: M23-Hidden_Mods.zip
-        name: ${{ github.run_id }}
+        name: ${{ github.event.inputs.DEVICE_NAME }}-${{ github.run_id }}
         tag_name: ${{ github.run_id }}
         body: |
-          Mod Version 1.0
-          Device: m23xq
+          Device: M23
+          Device: ${{ github.event.inputs.DEVICE_NAME }}
+          Target: ${{ github.event.inputs.BUILD_TARGET }}.img
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
