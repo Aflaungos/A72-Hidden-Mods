@@ -26,7 +26,7 @@ jobs:
       id: upload-release
       uses: softprops/action-gh-release@v1
       with:
-        files: ${{ runner.workspace }}/${{ env.ZIP_FILE }}
+        files: ${{ github.workspace }}/${{ env.ZIP_FILE }}
         name: ${{ github.run_id }}
         tag_name: ${{ github.run_id }}
         body: |
