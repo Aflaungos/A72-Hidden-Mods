@@ -56,9 +56,10 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - uses: dev-drprasad/delete-older-releases@v0.2
+    - name: Delete older releases
+    - uses: dev-drprasad/delete-older-releases@v0.2.1
       with:
       keep_latest: 1
-      delete_tag_pattern: beta # defaults to ""
+      delete_tag_pattern: beta
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
