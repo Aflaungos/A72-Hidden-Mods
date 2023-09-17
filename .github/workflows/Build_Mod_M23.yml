@@ -13,6 +13,18 @@ jobs:
     - name: Check Out
       uses: actions/checkout@v2
 
+    - name: Setup SSH Keys
+      if: ${{ startsWith(github.event.inputs.MANIFEST_URL, 'git@github.com') }}
+      uses: webfactory/ssh-agent@v0.5.4
+      with:
+          ssh-private-key: |
+              ${{ secrets.SSH_PRIVATE_KEY }}
+
+    - name: Initialize repo
+      run: |
+        git config --global user.name "Nico170420"
+        git config --global user.email "b170420nc@gmail.com"
+
     - name: Create Zip Archive
       run: |
         ZIP_FILE="M23-Hidden_Mods.zip"
