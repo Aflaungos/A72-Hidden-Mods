@@ -1,0 +1,38 @@
+name: Build Mod M23
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+ 
+    # You might want to Checkout your repo first, but not mandatory
+    - name: Check Out
+      uses: actions/checkout@v3
+    # Cleanup The Actions Workspace Using Custom Composite Run Actions
+    - name: Cleanup
+      uses: rokibhasansagar/slimhub_actions@main
+      # That's it! Now use your normal steps
+
+    - name: Create Zip Archive
+      run: |
+        # Define the name of the zip file (you can change it if needed)
+        ZIP_FILE="M23-Hidden_Mods.zip"
+        
+        # Archive all files in the repository into a zip file
+        zip -r $ZIP_FILE .
+
+    - name: Upload to Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: ${{ runner.workspace }}/${{ env.ZIP_FILE }}
+        name: ${{ github.run_id }}
+        tag_name: ${{ github.run_id }}
+        body: |
+          Mod Version 1.0
+          Device: m23xq
+      env:
+        ZIP_FILE: $ZIP_FILE
