@@ -25,7 +25,7 @@ jobs:
       id: upload-release
       uses: softprops/action-gh-release@v1
       with:
-        files: workspace/M23-Hidden_Mods.zip
+        files: M23-Hidden_Mods.zip
         name: ${{ github.run_id }}
         tag_name: ${{ github.run_id }}
         body: |
