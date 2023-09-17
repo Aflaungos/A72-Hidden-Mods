@@ -4,6 +4,19 @@ on:
   push:
     branches:
       - main
+    inputs:
+      delete_run_by_conclusion_pattern:
+        description: 'Remove workflow by conclusion: action_required, cancelled, failure, skipped, success'
+        required: true
+        default: "All"
+        type: choice
+        options:
+          - "All"
+          - action_required
+          - cancelled
+          - failure
+          - skipped
+          - success
 
 jobs:
   build:
@@ -50,6 +63,7 @@ jobs:
       with:
         token: ${{ github.token }}
         repository: ${{ github.repository }}
+        delete_run_by_conclusion_pattern: ${{ github.event.inputs.delete_run_by_conclusion_pattern }}
         retain_days: 30
         keep_minimum_runs: 6
       env:
