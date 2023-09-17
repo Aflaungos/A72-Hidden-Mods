@@ -17,7 +17,7 @@ jobs:
     - name: Create Zip Archive
       run: |
         # Define the name of the zip file (you can change it if needed)
-        import ZIP_FILE="M23-Hidden_Mods.zip"
+        ZIP_FILE="M23-Hidden_Mods.zip"
         
         # Archive all files in the repository into a zip file
         zip -r $ZIP_FILE .
@@ -26,7 +26,7 @@ jobs:
       id: upload-release
       uses: softprops/action-gh-release@v1
       with:
-        files: ${{ runner.workspace }}/${{ env.ZIP_FILE }}
+        files: workspace/M23-Hidden_Mods.zip
         name: ${{ github.run_id }}
         tag_name: ${{ github.run_id }}
         body: |
