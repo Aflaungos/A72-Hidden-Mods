@@ -2,5 +2,5 @@
 Running on devices with another patch can cause issues!
 
 ---
-<b>v1.1 | Changelog:</b>
-<br/>• Removed Detail Enhancer (doesn't work)
+<b>v1.2 | Changelog:</b>
+<br/>• Added DisplayBoard (doesn't work)
