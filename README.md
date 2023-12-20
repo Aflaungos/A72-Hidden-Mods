@@ -33,21 +33,15 @@ Thanks ShaDisNX255 for allowing me to use your features! Without you, this proje
 - Please report, if you find any
 
 #### Added OS Features:
-- Higher Audio Quality (Disabled DRC, which deeply compresses audio)
 - Disabled Samsung Marketing
 - High-End Animations
 - Enhanced CPU Responsiveness
 - Added High Performance mode (also known as Enhanced Processing mode)
-- Enhance Photo Feature in Gallery
-- Codec support for APE, DSD and HDR10+ content
 - ADPS (Wi-Fi Power Saving)
-- Enabled Resolution changing (FHD, HD - only visible in Bixby Routines)
 
 #### Added Camera Features:
-- Extended pro (video) mode features: Histogram, Focus peaking, Zoom, Reset button, Expanded shutter speed
 - Unlimited Video File Size
 - EIS Support / Video stabilization @ 4K (Disable energy saving mode to avoid lag)
-- Object/Shadow/Reflection Eraser (Update [Samsung Photo Editor](https://www.apkmirror.com/apk/samsung-electronics-co-ltd/samsung-photo-editor/) to make it work, by installing the latest APK)
 - Full single take (Full AI, Second Editing, ..)
 - Full Beauty features (Beauty in Live Focus, Beauty Brighten, Body Beauty, change skin tone)
 - Torch Flash in Live Focus
@@ -62,4 +56,3 @@ Thanks ShaDisNX255 for allowing me to use your features! Without you, this proje
 - [Galaxy Watch Camera Controller](https://www.samsung.com/us/support/answer/ANS00084676/)
 - Higher Gallery Zoom Quality
 - Video Auto FPS
-- Many, not worth to mention, additions
