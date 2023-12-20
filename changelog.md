@@ -3,4 +3,4 @@ Running on devices with another patch can cause issues!
 
 ---
 <b>v1.2 | Changelog:</b>
-<br/>• Added DisplayBoard
+<br/>• Small additions
