@@ -3,7 +3,8 @@ name: Build Mod
 on:
   push:
     branches:
-      - main
+      - A13
+      - A14
 
 jobs:
   build:
