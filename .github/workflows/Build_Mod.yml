@@ -34,9 +34,7 @@ jobs:
         name: M23 Hidden Mods
         tag_name: ${{ github.run_id }}
         body: |
-          Device: M23
-          Device: ${{ github.event.inputs.DEVICE_NAME }}
-          Target: ${{ github.event.inputs.BUILD_TARGET }}.img
+          Device: Samsung Galaxy M23/F23 5G
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
