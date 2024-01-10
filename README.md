@@ -27,32 +27,24 @@ Thanks ShaDisNX255 for allowing me to use your features! Without you, this proje
 - To fix Samsung Health root detection, I recommend using [KnoxPatch](https://github.com/BlackMesa123/KnoxPatch/releases)
 
 ### Known bugs:
-- Back Camera 1080p 60FPS: Video stutters
-- Detail Enhancer doesn't work
-  
+- Back Camera 1080p 60FPS at 0.5x: Video stutters
+- Back Camera 2160p 60FPS: Crashes Camera
 - Please report, if you find any
 
 #### Added OS Features:
-- Disabled Samsung Marketing
 - High-End Animations
 - Enhanced CPU Responsiveness
 - Added High Performance mode (also known as Enhanced Processing mode)
 - ADPS (Wi-Fi Power Saving)
 
 #### Added Camera Features:
-- Unlimited Video File Size
-- EIS Support / Video stabilization @ 4K (Disable energy saving mode to avoid lag)
-- Full single take (Full AI, Second Editing, ..)
 - Full Beauty features (Beauty in Live Focus, Beauty Brighten, Body Beauty, change skin tone)
 - Torch Flash in Live Focus
 - Review feature
 - Audio Input Control (In pro video mode - Limitation: Only internal microphone)
 - Improved Scene Detection
-- S-Series Photo Processing
-- S-Series AI-Models & AI Features
 - Video Audio Zoom
 - Full Intelligent Recognition (like Smart Scan Text Extraction)
 - Full Live Focus (all S-Series effects)
-- [Galaxy Watch Camera Controller](https://www.samsung.com/us/support/answer/ANS00084676/)
 - Higher Gallery Zoom Quality
 - Video Auto FPS
