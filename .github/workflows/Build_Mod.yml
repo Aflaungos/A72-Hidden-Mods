@@ -22,19 +22,17 @@ jobs:
               
     - name: Create A14 Zip Archive
       run: |
-	git clone https://github.com/Aflaungos/M23-Hidden-Mods -b A14
-        ZIP_FILE_A14="M23-Hidden_Mods_A14.zip"
-        cd $GITHUB_WORKSPACE
-        mv system_A14 system
-        zip -r $ZIP_FILE_A14 . -x ".git*" -x ".github*"
+       git clone https://github.com/Aflaungos/M23-Hidden-Mods -b A14
+       ZIP_FILE_A14="M23-Hidden_Mods_A14.zip"
+       cd $GITHUB_WORKSPACE
+       zip -r $ZIP_FILE_A14 . -x ".git*" -x ".github*" -i "*.*"
 
     - name: Create A13 Zip Archive
       run: |
-	git clone https://github.com/Aflaungos/M23-Hidden-Mods -b A13
-	ZIP_FILE_A13="M23-Hidden_Mods_A13.zip"
-        cd $GITHUB_WORKSPACE
-	mv system_A13 system
-        zip -r $ZIP_FILE_A13 . -x ".git*" -x ".github*"
+       git clone https://github.com/Aflaungos/M23-Hidden-Mods -b A13
+       ZIP_FILE_A13="M23-Hidden_Mods_A13.zip"
+       cd $GITHUB_WORKSPACE
+       zip -r $ZIP_FILE_A13 . -x ".git*" -x ".github*" -i "*.*"
 
     # Skip A12 for now
     # - name: Create A12 Zip Archive
