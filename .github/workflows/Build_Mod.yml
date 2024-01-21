@@ -29,9 +29,10 @@ jobs:
 
     - name: Create A13 Zip Archive
       run: |
-       cd ..
+       cd $GITHUB_WORKSPACE
        git clone https://github.com/Aflaungos/M23-Hidden-Mods -b A13 A13HM
        ZIP_FILE_A13="M23-Hidden_Mods_A13.zip"
+       cd $GITHUB_WORKSPACE/A13HM
        zip -r $ZIP_FILE_A13 . -x ".git*" -x ".github*" -i "*.*"
 
     # Skip A12 for now
