@@ -22,17 +22,17 @@ jobs:
               
     - name: Create A14 Zip Archive
       run: |
-       git clone https://github.com/Aflaungos/M23-Hidden-Mods -b A14
+       git clone https://github.com/Aflaungos/M23-Hidden-Mods -b A14 A14HM
        ZIP_FILE_A14="M23-Hidden_Mods_A14.zip"
-       cd $GITHUB_WORKSPACE
+       cd $GITHUB_WORKSPACE/A14HM
        zip -r $ZIP_FILE_A14 . -x ".git*" -x ".github*" -i "*.*"
 
     - name: Create A13 Zip Archive
       run: |
-       rm -rf .
-       git clone https://github.com/Aflaungos/M23-Hidden-Mods -b A13
+       cd ..
+       git clone https://github.com/Aflaungos/M23-Hidden-Mods -b A13 A13HM
        ZIP_FILE_A13="M23-Hidden_Mods_A13.zip"
-       cd $GITHUB_WORKSPACE
+       cd $GITHUB_WORKSPACE/A13HM
        zip -r $ZIP_FILE_A13 . -x ".git*" -x ".github*" -i "*.*"
 
     # Skip A12 for now
@@ -48,8 +48,8 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         files: |
-          M23-Hidden_Mods_A14.zip
-          M23-Hidden_Mods_A13.zip
+          $GITHUB_WORKSPACE/A14HM/M23-Hidden_Mods_A14.zip
+          $GITHUB_WORKSPACE/A13HM/M23-Hidden_Mods_A13.zip
         # M23-Hidden_Mods_A12.zip
         name: M23 Hidden Mods
         tag_name: ${{ github.run_id }}
