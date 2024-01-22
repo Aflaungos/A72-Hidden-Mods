@@ -16,6 +16,7 @@ Thanks ShaDisNX255 for allowing me to use your features! Without you, this proje
 - Back Camera 1080p 60FPS: Video stutters, disable auto fps and stabilization
 - If camera app crashes (or other issues like error on 50MP mode) please clear camera app data.
 - If system apps start crashing, boot into your Recovery and on
+  
   <details open>
   <summary>Stock recovery</summary>
   1. Wipe cache partition</br>
