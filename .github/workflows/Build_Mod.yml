@@ -25,7 +25,7 @@ jobs:
        git clone https://github.com/Aflaungos/M23-Hidden-Mods -b A14 A14HM
        ZIP_FILE_A14="M23-Hidden_Mods_A14.zip"
        cd $GITHUB_WORKSPACE/A14HM
-       zip -r $ZIP_FILE_A14
+       zip -r $ZIP_FILE_A14 . -x ".git*" -x ".github*" -i "*.*"
 
     - name: Create A13 Zip Archive
       run: |
@@ -33,7 +33,7 @@ jobs:
        git clone https://github.com/Aflaungos/M23-Hidden-Mods -b A13 A13HM
        ZIP_FILE_A13="M23-Hidden_Mods_A13.zip"
        cd $GITHUB_WORKSPACE/A13HM
-       zip -r $ZIP_FILE_A13
+       zip -r $ZIP_FILE_A13 . -x ".git*" -x ".github*" -i "*.*" META-INF
 
     # Skip A12 for now
     # - name: Create A12 Zip Archive
