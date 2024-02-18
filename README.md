@@ -1,9 +1,8 @@
 ![1000019785](https://github.com/Aflaungos/M23-Hidden-Mods/assets/31782624/843cf08e-baf8-443a-b168-ff4724fb162b)
 # M23 Hidden Mods OneUI 5.1
-A magisk module adding the mods from ShaDisNX255's NcX ROM [XDA-Thread](https://forum.xda-developers.com/t/samsung-galaxy-a71-working-mods.4173295/)  and based on ULTRAHQ's repo, plus many extra mods systemlessly!<br/>
-Thanks ShaDisNX255 for allowing me to use your features! Without you, this project would've never started.
+A magisk module adding OneUI mods to the Samsung Galaxy M23/F23 5G
 
-[XDA Thread of M23 Hidden Mods] https://forum.xda-developers.com/t/mod-oneui-m23-hidden-mods.4626443/
+[XDA Thread of M23 Hidden Mods](https://forum.xda-developers.com/t/mod-oneui-m23-hidden-mods.4626443)
 
 ### Installation:
 1. Download the module from the releases
