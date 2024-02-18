@@ -1,5 +1,5 @@
 ![1000019785](https://github.com/Aflaungos/M23-Hidden-Mods/assets/31782624/843cf08e-baf8-443a-b168-ff4724fb162b)
-# M23-Hidden-Mods OneUI 5.1
+# M23 Hidden Mods OneUI 5.1
 A magisk module adding the mods from ShaDisNX255's NcX ROM [XDA-Thread](https://forum.xda-developers.com/t/samsung-galaxy-a71-working-mods.4173295/)  and based on ULTRAHQ's repo, plus many extra mods systemlessly!<br/>
 Thanks ShaDisNX255 for allowing me to use your features! Without you, this project would've never started.
 
