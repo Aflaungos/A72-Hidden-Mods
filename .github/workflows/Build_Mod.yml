@@ -18,7 +18,7 @@ jobs:
  
     # You might want to Checkout your repo first, but not mandatory
     - name: Check Out
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
               
     - name: Create A14 Zip Archive
       run: |
