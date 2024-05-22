@@ -38,28 +38,7 @@
 	<local name="VIDEO_FF_ENABLE" value="true"  />
 	<local name="VIDEO_FRONT_REVERSE_ENABLE" value="true"  />
 	<local name="VIDEO_REAR_REVERSE_ENABLE" value="true"  />
-	<local name="VIDEO_GENERATION_HIGHLIGHTS_VIDEO" value="true"  />
-	<local name="VIDEO_GENERATION_DYNAMIC_VIDEO" value="true"  />
-	<local name="VIDEO_GENERATION_HIDT_VIDEO" value="false"  />
 	<local name="VIDEO_GENERATION_PARALLEL_ENABLE" value="true"  />
 	<local name="PHOTO_MAPPER_VERSION" value="3"  />
-	<local name="VIDEO_MAPPER_VERSION" value="3"  />
-
-	<!-- ST2.0 Enhancements in S-OS  -->
-	<local name="SUPPORT_GYRO_DEVICE_MOTION_INFO" value="true"  />
-	<local name="NEW_ACTIVITY_SELECTION" value="true"  />
-
-	<!-- ST3.0 features  -->
-	<local name="SUPPORT_CANDID" value="false"  />
-	<local name="SUPPORT_HV_BASIC_REELS" value="true" />
-
-	<!-- Jumpshot features  -->
-	<local name="SUPPORT_JUMPSHOT_DETECTION" value="true" />
-	<local name="RUN_FULL_SESSION_FOR_JUMP" value="true" />
-	<local name="JUMP_OUTPUT_COUNT" value="3" />
-	<local name="DUMP_JUMPSHOT_CONTENTS" value="false" />
-	<local name="DETECT_ONLY_FIRST_JUMP" value="true" />	
-	
-	<!-- CustomHV feature  -->    
-	<local name="ENABLE_HIGHLIGHT_VIDEO_CUSTOMIZATION" value="true"  />	
+	<local name="VIDEO_MAPPER_VERSION" value="3"  />	
 </resources>
