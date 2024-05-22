@@ -36,6 +36,8 @@ A magisk module adding OneUI mods to the Samsung Galaxy M23/F23 5G
 - Enhanced CPU Responsiveness
 - Added High Performance mode (also known as Enhanced Processing mode)
 - ADPS (Wi-Fi Power Saving)
+- Added DT2W feature
+- Added Photo Remaster
 
 #### Added Camera Features:
 - Full Beauty features (Beauty in Live Focus, Beauty Brighten, Body Beauty, change skin tone)
