@@ -1,0 +1,8 @@
+# Disable RIL Power Collapse
+ro.ril.disable.power.collapse=0
+
+# THIS REPAIRS THE SMART VIEW FEATURE
+wlan.wfd.hdcp=disable
+
+# THIS REPAIRS THE S-HEALTH APP
+ro.config.tima=0
