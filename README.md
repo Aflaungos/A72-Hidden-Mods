@@ -1,5 +1,5 @@
 ![1000019785](https://github.com/Aflaungos/M23-Hidden-Mods/assets/31782624/843cf08e-baf8-443a-b168-ff4724fb162b)
-# M23 Hidden Mods OneUI 6
+# M23 Hidden Mods OneUI 6.1
 A magisk module adding OneUI mods to the Samsung Galaxy M23/F23 5G
 
 [XDA Thread of M23 Hidden Mods](https://forum.xda-developers.com/t/mod-oneui-m23-hidden-mods.4626443)
@@ -14,7 +14,7 @@ A magisk module adding OneUI mods to the Samsung Galaxy M23/F23 5G
 > ⚠️ Note: It should only be used on the Galaxy M23/F23 (SM-M236B/SM-E236B) running the corresponding android security patch version as written in the releases. <br/>The changes are always reversile, by simply removing the module in magisk.
 
 ### ❔ Troubleshooting:
-- Back Camera 1080p 60FPS: Video stutters, disable auto fps and stabilization
+- Back Camera 1080p 60FPS: Video stutters, disable "Auto FPS" and "Stabilization"
 - If camera app crashes (or other issues like error on 50MP mode) please clear camera app data.
 - If system apps start crashing, boot into your Recovery and on
   
@@ -39,6 +39,7 @@ A magisk module adding OneUI mods to the Samsung Galaxy M23/F23 5G
 - ADPS (Wi-Fi Power Saving)
 - Added DT2W feature
 - Added Photo Remaster
+- Added Circle to Search
 
 #### ✨ Added Camera Features:
 - Full Beauty features (Beauty in Live Focus, Beauty Brighten, Body Beauty, change skin tone)
