@@ -6,7 +6,7 @@ on:
     branches:
       - A13
       - A14
-      - A14.1
+      - A14_1
       - A12
 
 jobs:
@@ -22,11 +22,11 @@ jobs:
     - name: Check Out
       uses: actions/checkout@v4
 
-    - name: Create A14.1 Zip Archive
+    - name: Create A14_1 Zip Archive
       run: |
-       git clone https://github.com/Aflaungos/M23-Hidden-Mods -b A14.1 A14.1HM
-       cd $GITHUB_WORKSPACE/A14.1HM
-       zip -r M23-Hidden_Mods_A14.1.zip . -x ".git*" -x ".github*" -x "MagiskMod.jpg" -x "LICENSE" -x "README.md"
+       git clone https://github.com/Aflaungos/M23-Hidden-Mods -b A14_1 A14_1HM
+       cd $GITHUB_WORKSPACE/A14_1HM
+       zip -r M23-Hidden_Mods_A14_1.zip . -x ".git*" -x ".github*" -x "MagiskMod.jpg" -x "LICENSE" -x "README.md"
               
     - name: Create A14 Zip Archive
       run: |
@@ -56,7 +56,7 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         files: |
-          A14.1HM/M23-Hidden_Mods_A14.1.zip
+          A14.1HM/M23-Hidden_Mods_A14_1.zip
           A14HM/M23-Hidden_Mods_A14.zip
           A13HM/M23-Hidden_Mods_A13.zip
         # M23-Hidden_Mods_A12.zip
