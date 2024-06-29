@@ -27,7 +27,7 @@ jobs:
        git clone https://github.com/Aflaungos/M23-Hidden-Mods -b A14.1 A14.1HM
        ZIP_FILE_A14.1="M23-Hidden_Mods_A14.1.zip"
        cd $GITHUB_WORKSPACE/A14.1HM
-       zip -r $ZIP_FILE_A14.1 . -x ".git*" -x ".github*" -x "MagiskMod.jpg" -x "LICENSE" -x "README.md"
+       zip -r M23-Hidden_Mods_A14.1.zip . -x ".git*" -x ".github*" -x "MagiskMod.jpg" -x "LICENSE" -x "README.md"
               
     - name: Create A14 Zip Archive
       run: |
