@@ -56,7 +56,7 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         files: |
-          A14.1HM/M23-Hidden_Mods_A14_1.zip
+          A14_1HM/M23-Hidden_Mods_A14_1.zip
           A14HM/M23-Hidden_Mods_A14.zip
           A13HM/M23-Hidden_Mods_A13.zip
         # M23-Hidden_Mods_A12.zip
