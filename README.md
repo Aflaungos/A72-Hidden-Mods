@@ -1,4 +1,4 @@
-![1000019785](https://github.com/Aflaungos/M23-Hidden-Mods/assets/31782624/843cf08e-baf8-443a-b168-ff4724fb162b)
+![1000019785](https://github.com/Aflaungos/M23-Hidden-Mods/blob/A14_1/MagiskMod.jpg)
 # M23 Hidden Mods OneUI 6.1
 A magisk module adding OneUI mods to the Samsung Galaxy M23/F23 5G
 
