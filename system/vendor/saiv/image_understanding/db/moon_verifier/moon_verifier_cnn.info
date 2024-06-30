@@ -1,0 +1,7 @@
+{
+	"version_id": "v1",
+   "pcmodel": "v2.7",
+   "model_type" : "cpu",
+   "precision" : "float32",
+   "model_path" : "/vendor/saiv/image_understanding/db/moon_verifier/moon_verifier_cnn.onnx"
+}
