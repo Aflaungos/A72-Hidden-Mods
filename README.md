@@ -28,18 +28,19 @@ A magisk module adding OneUI mods to the Samsung Galaxy M23/F23 5G
   </details>
 - To fix Samsung Health root detection, I recommend using [KnoxPatch](https://github.com/BlackMesa123/KnoxPatch/releases)
 
-### 🪲 Known bugs:
-- Back Camera 1080p 60FPS at 0.5x: Video stutters
+### 🪲 Known bugs
 - Please report, if you find any
 
 #### ✨ Added OS Features:
 - High-End Animations
 - Enhanced CPU Responsiveness
-- Added High Performance mode (also known as Enhanced Processing mode)
+- Added High Performance mode
 - ADPS (Wi-Fi Power Saving)
 - Added DT2W feature
 - Added Photo Remaster
 - Added Circle to Search
+- Generative AI Wallpaper
+- All AI features
 
 #### ✨ Added Camera Features:
 - Full Beauty features (Beauty in Live Focus, Beauty Brighten, Body Beauty, change skin tone)
