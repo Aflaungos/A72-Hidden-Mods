@@ -1,8 +1,0 @@
-{
-	"version_id": "v1",
-   "pcmodel": "v1.20",
-   "compiler": "snpe-2.17.0",
-   "model_type" : "dsp",
-   "precision" : "float16",
-   "model_path" : "/vendor/saiv/image_understanding/db/hdr_verifier/hdr_verifier_cnn.dlc"
-}
