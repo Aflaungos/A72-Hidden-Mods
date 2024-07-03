@@ -4,10 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - A13
-      - A14
       - A14_1
-      - A12
 
 jobs:
   build:
@@ -27,39 +24,12 @@ jobs:
        git clone https://github.com/Aflaungos/M23-Hidden-Mods -b A14_1 A14_1HM
        cd $GITHUB_WORKSPACE/A14_1HM
        zip -r M23-Hidden_Mods_A14_1.zip . -x ".git*" -x ".github*" -x "MagiskMod.jpg" -x "LICENSE" -x "README.md"
-              
-    - name: Create A14 Zip Archive
-      run: |
-       git clone https://github.com/Aflaungos/M23-Hidden-Mods -b A14 A14HM
-       ZIP_FILE_A14="M23-Hidden_Mods_A14.zip"
-       cd $GITHUB_WORKSPACE/A14HM
-       zip -r $ZIP_FILE_A14 . -x ".git*" -x ".github*" -x "MagiskMod.jpg" -x "LICENSE" -x "README.md"
-
-    - name: Create A13 Zip Archive
-      run: |
-       cd $GITHUB_WORKSPACE
-       git clone https://github.com/Aflaungos/M23-Hidden-Mods -b A13 A13HM
-       ZIP_FILE_A13="M23-Hidden_Mods_A13.zip"
-       cd $GITHUB_WORKSPACE/A13HM
-       zip -r $ZIP_FILE_A13 . -x ".git*" -x ".github*" -x "MagiskMod.jpg" -x "LICENSE" -x "README.md"
-
-    # Skip A12 for now
-    # - name: Create A12 Zip Archive
-    #   run: |
-    # 	git clone https://github.com/Aflaungos/M23-Hidden-Mods -b A12
-    #	ZIP_FILE_A12="M23-Hidden_Mods_A12.zip"
-    #   cd $GITHUB_WORKSPACE
-    #	mv system_A12 system
-    #   zip -r $ZIP_FILE_A12 . -x ".git*" -x ".github*"
 
     - name: Upload to Release
       uses: softprops/action-gh-release@v1
       with:
         files: |
           A14_1HM/M23-Hidden_Mods_A14_1.zip
-          A14HM/M23-Hidden_Mods_A14.zip
-          A13HM/M23-Hidden_Mods_A13.zip
-        # M23-Hidden_Mods_A12.zip
         name: M23 Hidden Mods
         tag_name: ${{ github.run_id }}
         body: |
