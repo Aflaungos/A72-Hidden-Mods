@@ -1,6 +1,3 @@
-# Disable RIL Power Collapse
-ro.ril.disable.power.collapse=0
-
 # THIS REPAIRS THE SMART VIEW FEATURE
 wlan.wfd.hdcp=disable
 
