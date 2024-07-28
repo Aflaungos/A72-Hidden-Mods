@@ -41,6 +41,10 @@ A magisk module adding OneUI mods to the Samsung Galaxy M23/F23 5G
 - Added Circle to Search
 - Generative AI Wallpaper
 - All AI features
+- Disable Samsung Marketing Info
+- Add new Edgelighting effects
+- Enable more Screen recorder features
+- Add Secure WiFi
 
 #### ✨ Added Camera Features:
 - Full Beauty features (Beauty in Live Focus, Beauty Brighten, Body Beauty, change skin tone)
