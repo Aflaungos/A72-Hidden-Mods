@@ -27,7 +27,7 @@
               ],
               "models_list": [
                 "e1q", "e2q", "e3q", "mu1q", "mu2q", "mu3q",
-                "SM-K758", "SM-K751", "SC-51E", "SC-52E"
+                "SM-K758", "SM-K751", "SC-51E", "SC-52E", "m23xq"
               ]
             }
           ],
@@ -384,7 +384,7 @@
               ],
               "models_list": [
                 "e1q", "e2q", "e3q", "mu1q", "mu2q", "mu3q",
-                "SM-K758", "SM-K751", "SC-51E", "SC-52E"
+                "SM-K758", "SM-K751", "SC-51E", "SC-52E", "m23xq"
               ]
             }
           ],
@@ -558,7 +558,7 @@
               ],
               "models_list": [
                 "e1q", "e2q", "e3q", "mu1q", "mu2q", "mu3q",
-                "SM-K758", "SM-K751", "SC-51E", "SC-52E"
+                "SM-K758", "SM-K751", "SC-51E", "SC-52E", "m23xq"
               ]
             }
           ],
@@ -847,7 +847,7 @@
               ],
               "models_list": [
                 "e1q", "e2q", "e3q", "mu1q", "mu2q", "mu3q",
-                "SM-K758", "SM-K751", "SC-51E", "SC-52E"
+                "SM-K758", "SM-K751", "SC-51E", "SC-52E", "m23xq"
               ]
             }
         ],

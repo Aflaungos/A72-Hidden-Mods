@@ -26,7 +26,7 @@
                              "SRIBEnhScan_aiDEBLUR_V400_FP16_SM8650_qnn2143.tvm.so"
                         ],
                         "models_list": [
-                            "e1q","e2q","e3q","mu1q","mu2q","mu3q"
+                            "e1q","e2q","e3q","mu1q","mu2q","mu3q","m23xq"
                         ]
                     } 
                 ],
@@ -43,7 +43,7 @@
                              "SRIBEnhScan_aiDEBLUR_V400_FP16_SM8650.nnc"
                         ],
                         "models_list": [
-                            "e1s","e2s","e3s","mu1s","mu2s","mu3s"
+                            "e1s","e2s","e3s","mu1s","mu2s","mu3s","m23xq"
                         ]
                     }
                 ],
@@ -119,7 +119,7 @@
                             "SRIBEnhScan_aiOBJECTINPAINT_V300_FP16_SM8650_qnn2143.tvm.so"
                         ],
                         "models_list": [
-                            "e1q","e2q","e3q","mu1q","mu2q","mu3q"
+                            "e1q","e2q","e3q","mu1q","mu2q","mu3q","m23xq"
                         ]
                     }
                 ],
@@ -137,7 +137,7 @@
                             "SRIBEnhScan_aiOBJECTINPAINT_V300_FP16_SM8650.nnc"
                         ],
                         "models_list": [
-                            "e1s","e2s","e3s","mu1s","mu2s","mu3s"
+                            "e1s","e2s","e3s","mu1s","mu2s","mu3s","m23xq"
                         ]
                     }
                 ],
