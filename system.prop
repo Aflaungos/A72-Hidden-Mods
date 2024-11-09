@@ -3,3 +3,9 @@ wlan.wfd.hdcp=disable
 
 # THIS REPAIRS THE S-HEALTH APP
 ro.config.tima=0
+
+# For Circle 2 Search
+ro.product.model=SM-S928B
+ro.product.system.model=SM-S928B
+ro.product.vendor.model=SM-S928B
+ro.product.odm.model=SM-S928B
