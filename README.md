@@ -10,7 +10,7 @@ A magisk module adding OneUI mods to the Samsung Galaxy M23/F23 5G
 1. Download the module from the releases
 2. Open the Magisk/KernelSU app and go to modules
 3. Click the "Install from storage" button and select the .zip you just downloaded
-4. Choose which modules (AI Features, Bixby) you want installed
+4. Reboot
 5. Done
 
 ### ❔ Troubleshooting:
