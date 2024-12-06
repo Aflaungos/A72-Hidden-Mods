@@ -1,5 +1,5 @@
 ![1000019785](https://github.com/Aflaungos/M23-Hidden-Mods/blob/A14_1/MagiskMod.jpg)
-# M23 Hidden Mods OneUI 6.1
+# M23 Hidden Mods OneUI 7
 A magisk module adding OneUI mods to the Samsung Galaxy M23/F23 5G
 
 [XDA Thread of M23 Hidden Mods](https://forum.xda-developers.com/t/mod-oneui-m23-hidden-mods.4626443)
