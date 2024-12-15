@@ -23,13 +23,22 @@ jobs:
       run: |
        git clone https://github.com/Aflaungos/M23-Hidden-Mods -b A14_1 A14_1HM
        cd $GITHUB_WORKSPACE/A14_1HM
-       zip -r M23-Hidden_Mods_A14_1.zip . -x ".git*" -x ".github*" -x "MagiskMod.jpg" -x "LICENSE" -x "README.md"
 
+       # Hidden-Mods Full
+       zip -r M23-Hidden_Mods_A14_1_FULL.zip . -x ".git*" -x ".github*" -x "floating_feature_lite.xml" -x "addon*" -x "MagiskMod.jpg" -x "LICENSE" -x "README.md"
+       
+       # Hidden-Mods Lite
+       cd $GITHUB_WORKSPACE/A14_1HM/system/etc
+       mv floating_feature_lite.xml floating_feature.xml
+       zip -r M23-Hidden_Mods_A14_1_Lite.zip . -x ".git*" -x ".github*" -x "floating_feature.xml" -x "addon*" -x "vendor*" -x "system/app/SmartCapture*" -x "system/app/VisualCloudCore*" -x "system/etc/ailasso*" -x "system/etc/inpainting*" -x "system/etc/objectremoval*" -x "system/etc/reflectionremoval*" -x "system/etc/shadowremoval*" -x "system/etc/style_transfer*" -x "system/lib64*" -x "system/priv-app/Applock*" -x "system/priv-app/PetService*" -x "system/priv-app/PhotoEditor_AIFull*" -x "system/priv-app/PhotoEditor_Mid*" -x "system/priv-app/PhotoRemasterService*" -x "system/priv-app/SpriteWallpaper*" -x "system/priv-app/TencentWifiSecurity*" -x "system/priv-app/WallpaperMagician-Stub*" -x "MagiskMod.jpg" -x "LICENSE" -x "README.md"
+       cd $GITHUB_WORKSPACE/A14_1HM/
+       
     - name: Upload to Release
       uses: softprops/action-gh-release@v1
       with:
         files: |
-          A14_1HM/M23-Hidden_Mods_A14_1.zip
+          A14_1HM/M23-Hidden_Mods_A14_1_FULL.zip
+          A14_1HM/M23-Hidden_Mods_A14_1_Lite.zip
         name: M23 Hidden Mods
         tag_name: ${{ github.run_id }}
         body: |
