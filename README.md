@@ -6,6 +6,11 @@ A magisk module adding OneUI mods to the Samsung Galaxy M23/F23 5G
 
 > ⚠️ Note: If using **KernelSU**, disable "**Unmount modules by default**" to allow some features from this module to work!
 
+### NEW✨ LITE Version:
+- Much lighter version of FULL
+- Does not have Galaxy AI
+- Better boot time
+  
 ### ⚙️ Installation:
 1. Download the module from the releases
 2. Open the Magisk/KernelSU app and go to modules
