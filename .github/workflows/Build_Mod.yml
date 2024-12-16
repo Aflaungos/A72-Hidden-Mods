@@ -19,14 +19,16 @@ jobs:
     - name: Check Out
       uses: actions/checkout@v4
 
-    - name: Create A14_1 Zip Archive
+    - name: Create A14_1 Zip Full Archive
       run: |
        git clone https://github.com/Aflaungos/M23-Hidden-Mods -b A14_1 A14_1HM
        cd $GITHUB_WORKSPACE/A14_1HM
 
        # Hidden-Mods Full
        zip -r M23-Hidden_Mods_A14_1_FULL.zip . -x ".git*" -x ".github*" -x "floating_feature_lite.xml" -x "addon*" -x "MagiskMod.jpg" -x "LICENSE" -x "README.md"
-       
+
+    - name: Create A14_1 Zip Lite Archive
+      run: |  
        # Hidden-Mods Lite
        cd $GITHUB_WORKSPACE/A14_1HM/system/etc
        mv floating_feature_lite.xml floating_feature.xml
