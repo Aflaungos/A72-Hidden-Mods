@@ -1,4 +1,4 @@
-name: Build Mod
+name: Build Hidden-Mods
 
 on:
   workflow_dispatch:
@@ -32,8 +32,8 @@ jobs:
        # Hidden-Mods Lite
        cd $GITHUB_WORKSPACE/A14_1HM/system/etc
        mv floating_feature_lite.xml floating_feature.xml
-       zip -r M23-Hidden_Mods_A14_1_Lite.zip . -x ".git*" -x ".github*" -x "floating_feature.xml" -x "addon*" -x "vendor*" -x "system/app/SmartCapture*" -x "system/app/VisualCloudCore*" -x "system/etc/ailasso*" -x "system/etc/inpainting*" -x "system/etc/objectremoval*" -x "system/etc/reflectionremoval*" -x "system/etc/shadowremoval*" -x "system/etc/style_transfer*" -x "system/lib64*" -x "system/priv-app/Applock*" -x "system/priv-app/PetService*" -x "system/priv-app/PhotoEditor_AIFull*" -x "system/priv-app/PhotoEditor_Mid*" -x "system/priv-app/PhotoRemasterService*" -x "system/priv-app/SpriteWallpaper*" -x "system/priv-app/TencentWifiSecurity*" -x "system/priv-app/WallpaperMagician-Stub*" -x "MagiskMod.jpg" -x "LICENSE" -x "README.md"
        cd $GITHUB_WORKSPACE/A14_1HM/
+       zip -r M23-Hidden_Mods_A14_1_Lite.zip . -x ".git*" -x ".github*" -x "floating_feature.xml" -x "addon*" -x "vendor*" -x "system/app/SmartCapture*" -x "system/app/VisualCloudCore*" -x "system/etc/ailasso*" -x "system/etc/inpainting*" -x "system/etc/objectremoval*" -x "system/etc/reflectionremoval*" -x "system/etc/shadowremoval*" -x "system/etc/style_transfer*" -x "system/lib64*" -x "system/priv-app/Applock*" -x "system/priv-app/PetService*" -x "system/priv-app/PhotoEditor_AIFull*" -x "system/priv-app/PhotoEditor_Mid*" -x "system/priv-app/PhotoRemasterService*" -x "system/priv-app/SpriteWallpaper*" -x "system/priv-app/TencentWifiSecurity*" -x "system/priv-app/WallpaperMagician-Stub*" -x "MagiskMod.jpg" -x "LICENSE" -x "README.md"
        
     - name: Upload to Release
       uses: softprops/action-gh-release@v1
