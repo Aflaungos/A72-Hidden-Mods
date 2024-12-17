@@ -55,7 +55,7 @@ jobs:
        rm -rf TencentWifiSecurity
        rm -rf WallpaperMagician-Stub
        cd $GITHUB_WORKSPACE/A14_1HM/
-       zip -r M23-Hidden_Mods_A14_1_Lite.zip . -x ".git*" -x ".github*" -x "floating_feature.xml" -x "addon*" -x "MagiskMod.jpg" -x "LICENSE" -x "README.md"
+       zip -r M23-Hidden_Mods_A14_1_Lite.zip . -x "M23-Hidden_Mods_A14_1_FULL.zip" -x ".git*" -x ".github*" -x "floating_feature.xml" -x "addon*" -x "MagiskMod.jpg" -x "LICENSE" -x "README.md"
        
     - name: Upload to Release
       uses: softprops/action-gh-release@v1
