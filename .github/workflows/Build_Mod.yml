@@ -31,23 +31,21 @@ jobs:
       run: |  
        # Hidden-Mods Lite
        cd $GITHUB_WORKSPACE/A14_1HM/system/etc
-       mv floating_feature_lite.xml floating_feature.xml
-       cd ..
-       cd /app
-       rm -rf SmartCapture
-       rm -rf VisualCloudCore
-       cd ..
-       cd /etc
        rm -rf ailasso
        rm -rf inpainting
        rm -rf objectremoval
        rm -rf reflectionremoval
        rm -rf shadowremoval
        rm -rf style_transfer
+       mv floating_feature_lite.xml floating_feature.xml
+       cd ..
+       cd $GITHUB_WORKSPACE/A14_1HM/system/app
+       rm -rf SmartCapture
+       rm -rf VisualCloudCore
        cd ..
        rm -rf lib64
        rm -rf vendor
-       cd /priv-app
+       cd $GITHUB_WORKSPACE/A14_1HM/system/priv-app
        rm -rf Applock
        rm -rf PetService
        rm -rf PhotoEditor_AIFull
