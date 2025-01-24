@@ -4,11 +4,5 @@ wlan.wfd.hdcp=disable
 # THIS REPAIRS THE S-HEALTH APP
 ro.config.tima=0
 
-# For Bixby
-ro.product.model=SM-S921B
-ro.product.system.model=SM-S921B
-ro.product.vendor.model=SM-S921B
-ro.product.odm.model=SM-S921B
-
 # Disable ASKS
 ro.build.official.release=false
