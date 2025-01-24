@@ -21,48 +21,24 @@ jobs:
 
     - name: Create A14_1 Zip Full Archive
       run: |
+       # Hidden-Mods Full
        git clone https://github.com/Aflaungos/M23-Hidden-Mods -b A14_1 A14_1HM
        cd $GITHUB_WORKSPACE/A14_1HM
-
-       # Hidden-Mods Full
        zip -r M23-Hidden_Mods_A14_1_FULL.zip . -x ".git*" -x ".github*" -x "floating_feature_lite.xml" -x "addon*" -x "MagiskMod.jpg" -x "LICENSE" -x "README.md"
 
     - name: Create A14_1 Zip Lite Archive
       run: |  
        # Hidden-Mods Lite
-       cd $GITHUB_WORKSPACE/A14_1HM/system/etc
-       rm -rf ailasso
-       rm -rf inpainting
-       rm -rf objectremoval
-       rm -rf reflectionremoval
-       rm -rf shadowremoval
-       rm -rf style_transfer
-       mv floating_feature_lite.xml floating_feature.xml
-       cd ..
-       cd $GITHUB_WORKSPACE/A14_1HM/system/app
-       rm -rf SmartCapture
-       rm -rf VisualCloudCore
-       cd ..
-       rm -rf lib64
-       rm -rf vendor
-       cd $GITHUB_WORKSPACE/A14_1HM/system/priv-app
-       rm -rf Applock
-       rm -rf PetService
-       rm -rf PhotoEditor_AIFull
-       rm -rf PhotoEditor_Mid
-       rm -rf PhotoRemasterService
-       rm -rf SpriteWallpaper
-       rm -rf TencentWifiSecurity
-       rm -rf WallpaperMagician-Stub
-       cd $GITHUB_WORKSPACE/A14_1HM/
-       zip -r M23-Hidden_Mods_A14_1_Lite.zip . -x "M23-Hidden_Mods_A14_1_FULL.zip" -x ".git*" -x ".github*" -x "floating_feature.xml" -x "addon*" -x "MagiskMod.jpg" -x "LICENSE" -x "README.md"
+       git clone https://github.com/Aflaungos/M23-Hidden-Mods -b A14_1_Lite A14_1HM_Lite
+       cd $GITHUB_WORKSPACE/A14_1HM_Lite
+       zip -r M23-Hidden_Mods_A14_1_Lite.zip . -x ".git*" -x ".github*" -x "MagiskMod.jpg" -x "LICENSE" -x "README.md"
        
     - name: Upload to Release
       uses: softprops/action-gh-release@v1
       with:
         files: |
           A14_1HM/M23-Hidden_Mods_A14_1_FULL.zip
-          A14_1HM/M23-Hidden_Mods_A14_1_Lite.zip
+          A14_1HM_Lite/M23-Hidden_Mods_A14_1_Lite.zip
         name: M23 Hidden Mods
         tag_name: ${{ github.run_id }}
         body: |
