@@ -1,1 +1,15 @@
 #MAGISK
+
+#Get device info
+model=$(getprop ro.product.system.model)
+version=$(getprop ro.system.build.version.release)
+if [[ "$model" == "SM-M236B" ]]; then
+   ui_print " Samsung Galaxy M23 detected... "
+else
+   abort " Your phone is not a Samsung Galaxy M23! "
+if [[ "$version" == "14" ]]; then
+   ui_print " Android 14 Detected... "
+elif [[ "$version" == "13" ]]; then
+   ui_print " Android 13 Detected... "
+else
+   ui_print " Android 12 Detected... "

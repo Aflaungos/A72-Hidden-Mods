@@ -1,7 +1,7 @@
-id=m23mods
-name=M23 Hidden Mods
-version=v3.0
-versionCode=3.0.0
+id=m23modslite
+name=M23 Hidden Mods Lite
+version=v1.0
+versionCode=1.0.0
 author=mrsiri
-description=This module adds mods to OneUI 6.1. See the GitHub/XDA Page for a full list of additions
-updateJson=https://github.com/Aflaungos/M23-Hidden-Mods/raw/refs/heads/A14_1/update.json
+description=This LITE module adds mods to OneUI 6.1. See the GitHub/XDA Page for a full list of additions
+updateJson=https://github.com/Aflaungos/M23-Hidden-Mods/raw/refs/heads/A14_1_Lite/update.json

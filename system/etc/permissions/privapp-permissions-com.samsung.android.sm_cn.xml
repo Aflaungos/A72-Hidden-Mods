@@ -58,5 +58,6 @@ applications that come with the Device Maintenance(Smart Manager) package
         <permission name="android.permission.MANAGE_APP_OPS_MODES"/>
         <permission name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
         <permission name="android.permission.MODIFY_DAY_NIGHT_MODE"/>
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
     </privapp-permissions>
 </permissions>
