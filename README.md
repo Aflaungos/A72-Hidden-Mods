@@ -34,7 +34,7 @@ A magisk module adding OneUI mods to the Samsung Galaxy M23/F23 5G
 - To fix Samsung Health root detection, I recommend using [KnoxPatch](https://github.com/salvogiangri/KnoxPatch)
 
 ### 🪲 Known bugs
-- Please report hewre or in Telegram, if you find any
+- Please report here or in Telegram, if you find any
 
 #### ✨ Added OS Features:
 - High-End Animations
